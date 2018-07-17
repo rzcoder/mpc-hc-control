@@ -49,6 +49,11 @@ getVolume(): Promise<number>
 
 ```ts
 getPosition(): Promise<IPositionInfo>
+
+interface IPositionInfo {
+    duration: number;
+    position: number;
+}
 ```
 
 ```ts
@@ -102,6 +107,30 @@ setVolume(volume: number): Promise<void>
 
 ```ts
 toggleMute(): Promise<void>
+```
+
+```ts
+getVariables(): Promise<IPlayerVariables>
+
+IPlayerVariables {
+    version: string;
+
+    file: string;
+    filepath: string;
+    filedir: string;
+    size: string;
+
+    state: number;
+    statestring: string;
+
+    position: number;
+    positionstring: string;
+    duration: number;
+    durationstring: string;
+
+    volumelevel: number;
+    muted: boolean;
+}
 ```
 
 Also you can use:
