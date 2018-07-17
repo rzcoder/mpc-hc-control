@@ -112,7 +112,7 @@ toggleMute(): Promise<void>
 ```ts
 getVariables(): Promise<IPlayerVariables>
 
-IPlayerVariables {
+interface IPlayerVariables {
     version: string;
 
     file: string;
