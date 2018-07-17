@@ -1,0 +1,7 @@
+test
+node_modules
+src
+.tmp
+.travis.yml
+tsconfig.json
+tslint.json
