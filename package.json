@@ -1,6 +1,6 @@
 {
   "name": "mpc-hc-control",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Lib for control Media Player Classic - Home Cinema via HTTP API",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -22,9 +22,13 @@
   ],
   "author": "rzcoder",
   "license": "MIT",
-  "dependencies": {
+
+  "devDependencies": {
     "@types/lodash": "^4.14.112",
     "@types/node": "^10.5.2",
+  },
+
+  "dependencies": {
     "axios": "^0.18.0",
     "lodash": "^4.17.10"
   }
