@@ -94,7 +94,7 @@ async jump(delta: number): Promise<void>
 skipBack(): Promise<void>
 ```
 
-```
+```ts
 skipForward(): Promise<void>
 ```
 
