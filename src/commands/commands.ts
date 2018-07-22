@@ -27,7 +27,7 @@ export interface IPositionInfo {
     position: number;
 }
 
-export abstract class AbstactPlayerController {
+export abstract class AbstractPlayerController {
     abstract execute(commandId: MpcCommands, data?: Dictionary<any>): Promise<any>;
     abstract getVariables(): Promise<IPlayerVariables>;
 
@@ -111,16 +111,32 @@ export abstract class AbstactPlayerController {
         return this.execute("NEXT");
     }
 
+    /**
+     * @volume - new volume in percents
+     */
     setVolume(volume: number): Promise<void>{
         return this.execute("SET_VOLUME", {
             volume: volume
         });
     }
 
-    /**
-     * @volume - new volume in percents
-     */
     toggleMute(): Promise<void> {
         return this.execute("VOLUME_MUTE");
+    }
+
+    nextAudioTrack(): Promise<void> {
+        return this.execute("NEXT_AUDIO");
+    }
+
+    prevAudioTrack(): Promise<void> {
+        return this.execute("PREV_AUDIO");
+    }
+
+    nextSubtitles(): Promise<void> {
+        return this.execute("NEXT_SUBTITLE");
+    }
+
+    prevSubtitles(): Promise<void> {
+        return this.execute("PREV_SUBTITLE");
     }
 }

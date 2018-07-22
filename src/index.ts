@@ -3,10 +3,10 @@ import axios from "axios";
 const querystring = require("querystring");
 import {MpcCommands, MpcCommandsList} from "./commands/mpcCommands";
 import {Dictionary} from "./types";
-import {IPlayerVariables, AbstactPlayerController} from "./commands/commands";
+import {IPlayerVariables, AbstractPlayerController} from "./commands/commands";
 import {variableParser} from "./variableParser";
 
-export class MpcControl extends AbstactPlayerController {
+export class MpcControl extends AbstractPlayerController {
     private host: string;
     private port: number;
 

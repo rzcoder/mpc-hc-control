@@ -110,6 +110,22 @@ toggleMute(): Promise<void>
 ```
 
 ```ts
+nextAudioTrack(): Promise<void>
+```
+
+```ts
+prevAudioTrack(): Promise<void>
+```
+
+```ts
+nextSubtitles(): Promise<void>
+```
+
+```ts
+prevSubtitles(): Promise<void>
+```
+
+```ts
 getVariables(): Promise<IPlayerVariables>
 
 interface IPlayerVariables {
