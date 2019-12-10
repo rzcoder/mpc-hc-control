@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/rzcoder/mpc-hc-control/issues"
   },
-  "homepage": "https://github.com/rzcoder/mpc-hc-controla",
+  "homepage": "https://github.com/rzcoder/mpc-hc-control",
   "scripts": {
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
