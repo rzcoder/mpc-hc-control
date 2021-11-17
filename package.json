@@ -22,14 +22,12 @@
   ],
   "author": "rzcoder",
   "license": "MIT",
-
   "devDependencies": {
-    "@types/lodash": "^4.14.112",
-    "@types/node": "^10.5.2"
+    "@types/lodash": "^4.14.177",
+    "@types/node": "^16.11.7"
   },
-
   "dependencies": {
-    "axios": "^0.21.2",
+    "axios": "^0.24.0",
     "lodash": "^4.17.10"
   }
 }
