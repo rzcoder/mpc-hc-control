@@ -27,7 +27,7 @@
     "@types/node": "^16.11.7"
   },
   "dependencies": {
-    "axios": "^0.24.0",
+    "axios": "^1.6.0",
     "lodash": "^4.17.10"
   }
 }
